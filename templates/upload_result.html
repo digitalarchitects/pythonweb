@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Upload Result</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="center-viewport">
+  <div class="card">
+    <h1>Upload Complete</h1>
+    <p>File <strong>{{ filename }}</strong> uploaded.</p>
+    <p>Imported into <strong>{{ result.table }}</strong> in DB <small class="muted">{{ result.db }}</small> ({{ result.rows }} rows).</p>
+
+    <div style="margin-top:1rem;">
+      <a class="btn" href="{{ url_for('upload_form') }}">Upload Another</a>
+      <a class="btn" href="{{ url_for('main_menu') }}">Home</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* Global styles extracted from templates */
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  color: #222;
+}
+
+.center-viewport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 0 .5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover { background: #0056b3; }
+.btn:active { transform: translateY(1px); }
+
+.table-list { max-width: 800px; margin: 0 auto; }
+.row { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem; border-bottom: 1px solid #eee; }
+.muted { color: #666; font-size: 0.9rem; }
+.top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+
+a { color: #007bff; text-decoration: none; }

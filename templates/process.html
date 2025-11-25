@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Process Uploads</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="table-list">
+    <div class="top">
+      <h1>Process Uploads</h1>
+      <div class="muted">DB: {{ db }}</div>
+    </div>
+
+    {% if tables %}
+      {% for t in tables %}
+        <div class="row">
+          <div>{{ t }}</div>
+          <a class="btn" href="{{ url_for('export_table', table_name=t) }}">Export</a>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>No tables found in the database.</p>
+    {% endif %}
+
+    <p style="margin-top:1rem;"><a href="{{ url_for('main_menu') }}">&larr; Back to Main Menu</a></p>
+  </div>
+</body>
+</html>

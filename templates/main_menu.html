@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Main Menu</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="center-viewport">
+  <div class="card">
+    <h1>Main Menu</h1>
+    <p>Go to the uploads page to upload a CSV file.</p>
+    <div>
+      <a class="btn" href="{{ url_for('upload_form') }}">Go to Uploads</a>
+      <a class="btn" href="{{ url_for('process_page') }}">Go to Process</a>
+    </div>
+  </div>
+</body>
+</html>
